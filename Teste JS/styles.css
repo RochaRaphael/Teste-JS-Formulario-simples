@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.parent-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adiciona espaço entre as divs */
+    justify-content: center;
+}
+
+.containerGabarito, .containerResposta, .containerCorrige {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.containerGabarito {
+    background-color: #b93b3b;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .parent-container {
+        flex-direction: column;
+    }
+
+    .containerGabarito, .containerResposta, .containerCorrige {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.setButton, .correctButton {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.correctButton{
+    background-color: #e2d030;
+
+
+
+}
+
+button:hover {
+    background-color: #45a049;
+}
